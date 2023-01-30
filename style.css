@@ -26,6 +26,8 @@ section::before{
     color: white;
 }
 
+
+/* Navbar Home Section */
 .navbar {
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -42,26 +44,6 @@ section::before{
 .home .arrow img {
     width: 60px;
 }
-
-.about::before {
-    content: 'About';
-}
-
-
-.about-exp-item {
-    margin-top: 24px;
-}
-
-.about-exp-item-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about-exp-item-detail {
-    display: none;
-}
-
 
 #arrow {
     animation: 2s upDown infinite;
@@ -80,3 +62,93 @@ section::before{
         transform: translateY(0px);
     }
 }
+/* Navbar Home Section End */
+
+
+/* About Section */
+.about::before {
+    content: 'About';
+}
+
+
+.about-exp-item {
+    margin-top: 24px;
+}
+
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+/* About Section End */
+
+
+
+/* Work Section */
+.work::before {
+    content: "Work";
+    margin-top: 2rem;
+}
+
+.work-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+                        "work-1 work-2"
+                        "work-3 work-3";
+    gap: 16px;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.work-img-item {
+    position: relative;
+}
+
+.work-img-item:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#work-1 {
+    grid-area: work-1;
+}
+
+#work-1:hover::after{
+    content: "Web Project";
+}
+
+#work-2 {
+    grid-area: work-2;
+}
+
+#work-2:hover::after{
+    content: "Web Project";
+}
+
+#work-3 {
+    grid-area: work-3;
+}
+
+#work-3:hover::after{
+    content: "Web Project";
+}
+
+/* Work Section End */
