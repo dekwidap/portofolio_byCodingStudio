@@ -49,6 +49,11 @@ section::before {
     width: 60px;
 }
 
+.photo-profile {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
 #arrow {
     animation: 2s upDown infinite;
 }
@@ -187,7 +192,19 @@ section::before {
 
 @media only screen and (max-width: 576px) {
     section::before {
-        left: -10px;
+        left: 10px;
         font-size: 64px;
+    }
+
+    .social-media {
+        margin-right: 5px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home h3 {
+        font-size:24px;
     }
 }
