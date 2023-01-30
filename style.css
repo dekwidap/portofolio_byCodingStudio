@@ -1,18 +1,18 @@
 section {
-    margin-top: 92px;
+    padding-top: 128px;
     position: relative;
 }
 
-section::before{
+section::before {
     z-index: -1;
     content: '';
     font-size: 72px;
-    font-weight: 700;
     color: gray;
     opacity: 0.25;
     position: absolute;
-    top: -120px;
-    left: 5px;
+    font-weight: 700;
+    top: 20px;
+    left: -30px;
 }
 
 .btn.button {
@@ -39,6 +39,10 @@ section::before{
 
 .home h3 {
     font-size: 56px;
+}
+
+.home img {
+    width: 100%;
 }
 
 .home .arrow img {
@@ -91,7 +95,6 @@ section::before{
 /* Work Section */
 .work::before {
     content: "Work";
-    margin-top: 2rem;
 }
 
 .work-img {
@@ -162,7 +165,6 @@ section::before{
 
 .contact::before{
     content: "Contact";
-    margin-top: 2rem;
 }
 
 .contact-form {
@@ -175,3 +177,17 @@ section::before{
 }
 
 /* Contact Section  End*/
+
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width:50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
